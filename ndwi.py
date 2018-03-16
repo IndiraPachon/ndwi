@@ -46,7 +46,7 @@ for x in nbar.coords:
         ncoords.append( ( x, nbar.coords[x]) )
         xdims.append(x)
         xcords[x]=nbar.coords[x]
-variables ={"ndwi": xr.DataArray(period_nvdi, dims=xdims,coords=ncoords)}
+variables ={"ndwi": xr.DataArray(period_ndwi, dims=xdims,coords=ncoords)}
 output=xr.Dataset(variables, attrs={'crs':nbar.crs})
 for x in output.coords:
     output.coords[x].attrs["units"]=nbar.coords[x].units
