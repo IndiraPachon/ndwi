@@ -9,7 +9,7 @@ def isin(element, test_elements, assume_unique=False, invert=False):
 
 nbar = xarr0
 nodata=-9999
-bands=["red","nir"]
+bands=["green","nir"]
 medians={}
 cvalidValues=set()
 if product=="LS7_ETM_LEDAPS":
